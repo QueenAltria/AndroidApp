@@ -19,3 +19,19 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-dontwarn com.tencent.bugly.**
+-keep public class com.tencent.bugly.**{*;}
+# tinker混淆规则
+-dontwarn com.tencent.tinker.**
+-keep class com.tencent.tinker.** { *; }
+
+-dontwarn com.tencent.tinker.anno.AnnotationProcessor
+-keep @com.tencent.tinker.anno.DefaultLifeCycle public class
+
+-keepattributes SourceFile,LineNumberTable
+
+-dontwarn com.google.**
+
+-dontwarn com.android.**
+

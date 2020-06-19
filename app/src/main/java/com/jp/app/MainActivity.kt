@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity()  {
         var inflate:ActivityMainBinding=DataBindingUtil.setContentView<ActivityMainBinding>(this,R.layout.activity_main)
 
         inflate.title="哈哈"
-        inflate.user= User("name","phone")
+        inflate.user= User("tinker修复后","phone")
         //setContentView(inflate.root)
 
 
